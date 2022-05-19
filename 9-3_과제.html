@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        /*
+        document.getElementById('appendBtn').addEventListener('click', function() {
+            const div = document.createElement('div');
+            let html = '';
+            for(let i=1; i<=5; i++){
+                for(let j=0; j<i; j++){
+                    html += "*";
+                }
+                html += "<br>";
+            }
+            div.innerHTML = html;
+            document.body.appendChild(div);
+        });
+    
+        document.getElementById('removeBtn').addEventListener('click', function() {
+            const div = document.querySelector('div');
+            if(div) {
+                div.parentNode.removeChild(div);
+            } 
+        });
+        */
+    </script>
+</head>
+<body>
+    <h3>별 출력 하기</h3>
+    <button id="appendBtn">출럭</button>
+    <button id="removeBtn">삭제</button>
+
+    <script>
+    document.getElementById('appendBtn').addEventListener('click', function() {
+        const div = document.createElement('div');
+        let html = '';
+        for(let i=1; i<=5; i++){
+            for(let j=0; j<i; j++){
+                html += "*";
+            }
+            html += "<br>";
+        }
+        div.innerHTML = html;
+        document.body.appendChild(div);
+    });
+
+    document.getElementById('removeBtn').addEventListener('click', function() {
+        const div = document.querySelector('div');
+        if(div) {
+            div.parentNode.removeChild(div);
+        } 
+    });
+    </script>
+</body>
+</html>
